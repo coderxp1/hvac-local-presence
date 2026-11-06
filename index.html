@@ -8,14 +8,17 @@
   <meta name="theme-color" content="#0b1220" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://images.pexels.com" />
+  <link rel="preconnect" href="https://assets.mixkit.co" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <!--
     Stock media credits (royalty-free / free license):
-    - Hero video: Mixkit — rooftop HVAC / air conditioning (assets.mixkit.co), free license
-    - Photos: Unsplash — technician, thermostat, handshake, phone (unsplash.com/license)
-    - Home exterior: Pexels — modern suburban home at dusk (pexels.com/license)
-    Attribution appreciated; no brand trademarks used in logo.
+    - Hero video: Mixkit rooftop HVAC https://assets.mixkit.co/videos/49185/49185-720.mp4 (Mixkit Free License)
+    - Photos: Unsplash — technician, thermostat, handshake, phone (https://unsplash.com/license)
+    - Home exterior: Pexels modern suburban home (https://www.pexels.com/license)
+    - Local copies also kept under /assets for offline reference; logo is original SVG.
   -->
 </head>
 <body>
@@ -43,12 +46,16 @@
           muted
           loop
           playsinline
-          poster="assets/hero-poster.jpg"
+          poster="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1600&q=80"
           preload="metadata"
         >
-          <source src="assets/hero.mp4" type="video/mp4" />
+          <source src="https://assets.mixkit.co/videos/49185/49185-720.mp4" type="video/mp4" />
         </video>
-        <img class="hero-poster-fallback" src="assets/hero-poster.jpg" alt="" />
+        <img
+          class="hero-poster-fallback"
+          src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1600&q=80"
+          alt=""
+        />
         <div class="hero-overlay"></div>
       </div>
       <div class="wrap hero-grid">
@@ -84,19 +91,19 @@
       <div class="wrap">
         <div class="photo-strip-grid">
           <figure>
-            <img src="assets/photo-tech.jpg" alt="HVAC technician servicing outdoor equipment" width="600" height="800" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="HVAC technician servicing outdoor equipment" width="600" height="800" loading="lazy" />
             <figcaption>Technicians who show up ready</figcaption>
           </figure>
           <figure>
-            <img src="assets/photo-home.jpg" alt="Modern suburban home at dusk with warm interior lights" width="800" height="520" loading="lazy" />
+            <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Modern suburban home at dusk with warm interior lights" width="800" height="520" loading="lazy" />
             <figcaption>Homes that need you found on Google</figcaption>
           </figure>
           <figure>
-            <img src="assets/photo-thermostat.jpg" alt="Modern smart thermostat on a wall showing heat setting" width="600" height="600" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?auto=format&fit=crop&w=800&q=80" alt="Modern smart thermostat on a wall showing heat setting" width="600" height="600" loading="lazy" />
             <figcaption>Comfort starts with a clear listing</figcaption>
           </figure>
           <figure>
-            <img src="assets/photo-handshake.jpg" alt="Two people shaking hands after agreeing on service" width="800" height="520" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" alt="Two people shaking hands after agreeing on service" width="800" height="520" loading="lazy" />
             <figcaption>Trust that turns searches into jobs</figcaption>
           </figure>
         </div>
@@ -184,9 +191,9 @@
               </li>
             </ol>
           </div>
-          <div class="how-photos" aria-hidden="false">
-            <img class="how-photo main" src="assets/photo-tech-portrait.jpg" alt="HVAC technician ready for a service call" width="480" height="640" loading="lazy" />
-            <img class="how-photo secondary" src="assets/photo-phone.jpg" alt="Smartphone with Google Maps and local apps" width="400" height="400" loading="lazy" />
+          <div class="how-photos">
+            <img class="how-photo main" src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=800&q=80" alt="HVAC technician ready for a service call" width="480" height="640" loading="lazy" />
+            <img class="how-photo secondary" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=700&q=80" alt="Smartphone with Google Maps and local apps" width="400" height="400" loading="lazy" />
           </div>
         </div>
       </div>
