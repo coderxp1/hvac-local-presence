@@ -5,17 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HVAC Local Presence — Google Business cleanup for HVAC companies</title>
   <meta name="description" content="Setup and monthly Google Business Profile help for HVAC owners. Audit, review replies, and a plain-English report. Secure checkout via Stripe." />
-  <meta name="theme-color" content="#1e3a5f" />
+  <meta name="theme-color" content="#0b1220" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <!--
+    Stock media credits (royalty-free / free license):
+    - Hero video: Mixkit — rooftop HVAC / air conditioning (assets.mixkit.co), free license
+    - Photos: Unsplash — technician, thermostat, handshake, phone (unsplash.com/license)
+    - Home exterior: Pexels — modern suburban home at dusk (pexels.com/license)
+    Attribution appreciated; no brand trademarks used in logo.
+  -->
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#top">HVAC Local Presence</a>
-      <nav class="nav">
+      <a class="brand" href="#top">
+        <img class="brand-logo" src="assets/logo.svg" width="36" height="36" alt="" />
+        <span class="brand-text">HVAC Local Presence</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
         <a href="#included">What's included</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
@@ -25,9 +35,24 @@
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-media" aria-hidden="true">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/hero-poster.jpg"
+          preload="metadata"
+        >
+          <source src="assets/hero.mp4" type="video/mp4" />
+        </video>
+        <img class="hero-poster-fallback" src="assets/hero-poster.jpg" alt="" />
+        <div class="hero-overlay"></div>
+      </div>
       <div class="wrap hero-grid">
-        <div>
+        <div class="hero-copy">
           <p class="eyebrow">For HVAC company owners</p>
           <h1>Make your Google Business Profile work when homeowners search for AC and heat.</h1>
           <p class="lede">
@@ -55,10 +80,33 @@
       </div>
     </section>
 
-    <section class="section muted" id="problem">
+    <section class="photo-strip" aria-label="Real work, real homes">
+      <div class="wrap">
+        <div class="photo-strip-grid">
+          <figure>
+            <img src="assets/photo-tech.jpg" alt="HVAC technician servicing outdoor equipment" width="600" height="800" loading="lazy" />
+            <figcaption>Technicians who show up ready</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photo-home.jpg" alt="Modern suburban home at dusk with warm interior lights" width="800" height="520" loading="lazy" />
+            <figcaption>Homes that need you found on Google</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photo-thermostat.jpg" alt="Modern smart thermostat on a wall showing heat setting" width="600" height="600" loading="lazy" />
+            <figcaption>Comfort starts with a clear listing</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photo-handshake.jpg" alt="Two people shaking hands after agreeing on service" width="800" height="520" loading="lazy" />
+            <figcaption>Trust that turns searches into jobs</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
       <div class="wrap narrow">
         <h2>The quiet problem on most HVAC listings</h2>
-        <p>
+        <p class="section-lede">
           Homeowners decide fast. If your Google profile has old hours, missing services, a broken call button,
           or unanswered reviews, they move to the next company. You do not need another agency pitch —
           you need the listing fixed and kept current.
@@ -80,7 +128,7 @@
       </div>
     </section>
 
-    <section class="section" id="included">
+    <section class="section section-alt" id="included">
       <div class="wrap">
         <h2>What's included</h2>
         <p class="section-intro">Two clear offers. Start with setup. Add monthly when you want ongoing help.</p>
@@ -99,6 +147,7 @@
             <a class="btn btn-primary btn-block" href="https://buy.stripe.com/3cIeVf4GZ5ei0sjaKs7kc0T" target="_blank" rel="noopener noreferrer">Pay $197 — Setup</a>
           </article>
           <article class="offer-card featured">
+            <p class="offer-badge">Most owners add this</p>
             <p class="offer-label">Ongoing</p>
             <h3>Monthly</h3>
             <p class="price"><span>$297</span> / month</p>
@@ -109,33 +158,41 @@
               <li>Keep hours, services, and basics current</li>
               <li>Cancel anytime via Stripe</li>
             </ul>
-            <a class="btn btn-primary btn-block" href="https://buy.stripe.com/bJe28tehz5eia2T9Go7kc0U" target="_blank" rel="noopener noreferrer">Pay $297/mo — Monthly</a>
+            <a class="btn btn-accent btn-block" href="https://buy.stripe.com/bJe28tehz5eia2T9Go7kc0U" target="_blank" rel="noopener noreferrer">Pay $297/mo — Monthly</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section muted" id="how">
-      <div class="wrap narrow">
-        <h2>How it works</h2>
-        <ol class="steps">
-          <li>
-            <strong>Checkout on Stripe</strong>
-            <span>Pay for Setup or Monthly. You get a receipt by email from Stripe.</span>
-          </li>
-          <li>
-            <strong>Send your Google listing</strong>
-            <span>Reply with your business name, city, and Google Business Profile link or search name.</span>
-          </li>
-          <li>
-            <strong>Receive the work</strong>
-            <span>Setup materials arrive by email. Monthly clients get posts, reply drafts, and a short report on a regular cadence.</span>
-          </li>
-        </ol>
+    <section class="section how-section" id="how">
+      <div class="wrap">
+        <div class="how-layout">
+          <div>
+            <h2>How it works</h2>
+            <ol class="steps">
+              <li>
+                <strong>Checkout on Stripe</strong>
+                <span>Pay for Setup or Monthly. You get a receipt by email from Stripe.</span>
+              </li>
+              <li>
+                <strong>Send your Google listing</strong>
+                <span>Reply with your business name, city, and Google Business Profile link or search name.</span>
+              </li>
+              <li>
+                <strong>Receive the work</strong>
+                <span>Setup materials arrive by email. Monthly clients get posts, reply drafts, and a short report on a regular cadence.</span>
+              </li>
+            </ol>
+          </div>
+          <div class="how-photos" aria-hidden="false">
+            <img class="how-photo main" src="assets/photo-tech-portrait.jpg" alt="HVAC technician ready for a service call" width="480" height="640" loading="lazy" />
+            <img class="how-photo secondary" src="assets/photo-phone.jpg" alt="Smartphone with Google Maps and local apps" width="400" height="400" loading="lazy" />
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="pricing">
+    <section class="section section-cta" id="pricing">
       <div class="wrap narrow pricing-cta">
         <h2>Simple pricing. Secure checkout.</h2>
         <p>
@@ -144,12 +201,12 @@
         </p>
         <div class="hero-actions center">
           <a class="btn btn-primary" href="https://buy.stripe.com/3cIeVf4GZ5ei0sjaKs7kc0T" target="_blank" rel="noopener noreferrer">Setup — $197</a>
-          <a class="btn btn-secondary" href="https://buy.stripe.com/bJe28tehz5eia2T9Go7kc0U" target="_blank" rel="noopener noreferrer">Monthly — $297/mo</a>
+          <a class="btn btn-accent" href="https://buy.stripe.com/bJe28tehz5eia2T9Go7kc0U" target="_blank" rel="noopener noreferrer">Monthly — $297/mo</a>
         </div>
       </div>
     </section>
 
-    <section class="section muted" id="faq">
+    <section class="section section-alt" id="faq">
       <div class="wrap narrow">
         <h2>FAQ</h2>
         <div class="faq">
@@ -184,9 +241,12 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <div>
-        <p class="brand-footer">HVAC Local Presence</p>
-        <p>A product of <a href="https://paulhartmann.dev" rel="noopener noreferrer">Paulhartmann.dev</a></p>
+      <div class="footer-brand">
+        <img src="assets/logo.svg" width="32" height="32" alt="" />
+        <div>
+          <p class="brand-footer">HVAC Local Presence</p>
+          <p>A product of <a href="https://paulhartmann.dev" rel="noopener noreferrer">Paulhartmann.dev</a></p>
+        </div>
       </div>
       <div class="footer-contact">
         <p><a href="mailto:5cng2pv6@mail.grokbot.com">5cng2pv6@mail.grokbot.com</a></p>
@@ -194,5 +254,6 @@
       </div>
     </div>
   </footer>
+  <script src="config.js" defer></script>
 </body>
 </html>
