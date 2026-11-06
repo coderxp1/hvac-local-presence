@@ -1,0 +1,21 @@
+{
+  "setup": {
+    "product_id": "prod_Va27KXJnPgKWm4",
+    "price_id": "price_1UYs3hPW61ouIFFsUMcit3hN",
+    "payment_link_id": "plink_1UYs3uPW61ouIFFsRrZjjAnM",
+    "url": "https://buy.stripe.com/3cIeVf4GZ5ei0sjaKs7kc0T",
+    "amount": 19700,
+    "currency": "usd"
+  },
+  "monthly": {
+    "product_id": "prod_Va28oBWdBvqwQi",
+    "price_id": "price_1UYs3qPW61ouIFFs9wtVvtyN",
+    "payment_link_id": "plink_1UYs3zPW61ouIFFsrfi4M6bs",
+    "url": "https://buy.stripe.com/bJe28tehz5eia2T9Go7kc0U",
+    "amount": 29700,
+    "currency": "usd",
+    "interval": "month"
+  },
+  "contact_email": "5cng2pv6@mail.grokbot.com",
+  "brand": "Paulhartmann.dev"
+}
